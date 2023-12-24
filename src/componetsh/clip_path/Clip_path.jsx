@@ -1,8 +1,13 @@
-import React, { useEffect } from 'react'
 import "./clip_path.css"
+import "./skils.css"
 import { useState } from 'react';
 import { motion } from "framer-motion";
-import "./skils.css"
+import Tolanding from '../Tolanding';
+import Projeck from "../projeck/Projeck";
+import Contack from "../contack/Contack";
+import { Canvas } from '@react-three/fiber';
+import { Environment } from '@react-three/drei';
+import React, { Suspense, useEffect } from 'react';
 
 function Clip_path(props) {
     const { value } = props;
@@ -13,8 +18,8 @@ function Clip_path(props) {
         } else {
             setnevvalue(10)
         }
-
     }, [value]);
+
     const skills = [
         {
             title: "Threejs / React Three Fiber",
@@ -40,23 +45,23 @@ function Clip_path(props) {
     const languages = [
         {
             title: "🇺🇸 English",
-            level: 90,
+            level: 70,
         },
         {
             title: "🇫🇷 Germany",
             level: 30,
         },
-
     ];
-
     return (
         <>
+            <h2 style={{ right: `${100 - nevvalue / 6}%` }} className="text2">frontend devoloper</h2>
             <h2 style={{ left: `${100 - nevvalue / 6}%` }} className="text">ibrahim akyel</h2>
             <section style={{ clipPath: `circle(${nevvalue}px at center 69%)` }}>
+                <h2 style={{ right: `${100 - nevvalue / 6}%` }} className="innerText2">frontend devoloper</h2>
                 <h2 style={{ left: `${100 - nevvalue / 6}%` }} className="innerText">ibrahim akyel</h2>
             </section>
             <div className="container">
-                <motion.div whileInView={"visible"}>
+                <motion.div whileInView={"visible"} id="skil" className="skill.skilll">
                     <h2 className="skill_h2">Skills</h2>
                     <div className="skill_item">
                         {skills.map((skill, index) => (
@@ -100,7 +105,7 @@ function Clip_path(props) {
                             </div>
                         ))}
                     </div>
-                    <div whileInView={"visible"}>
+                    <div whileInView={"visible"} style={{ width: "36%" }}>
                         <h2 className="skill_lang">Languages</h2>
                         <div className="skill_div4">
                             {languages.map((lng, index) => (
@@ -146,7 +151,19 @@ function Clip_path(props) {
                         </div>
                     </div>
                 </motion.div>
-
+                <Canvas id='canvas2' style={{
+                    width: "100%", height: "100vh",
+                    position: "absolute", top: "0px",
+                    left: "200px", display: "inline-block"
+                }}>
+                    <ambientLight />
+                    <Environment preset="sunset" />
+                    <Suspense fallback={null}>
+                        <Tolanding value={value} />
+                    </Suspense>
+                </Canvas>
+                <Projeck />
+            <Contack />
             </div>
         </>
     )

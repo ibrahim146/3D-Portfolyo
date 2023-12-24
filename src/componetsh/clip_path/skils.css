@@ -1,3 +1,6 @@
+.skill.skilll{
+  background-color: black;
+}
 .skill_h2{
     font-size: 1.75rem; /* veya 60px; */
     font-weight: 700;
@@ -22,7 +25,7 @@
   
   .skill_skill{
     height: 100%; 
-    background-color: #6b46c1; 
+    background-color: rgb(3, 3, 250); 
     border-radius: 9999px; 
   }
   .skill_lang{
@@ -48,6 +51,6 @@
   }
   .skill_lang_div4{
     height: 100%; 
-    background-color: #6b46c1; 
+    background-color: rgb(3, 3, 250); 
     border-radius: 9999px;
   }
