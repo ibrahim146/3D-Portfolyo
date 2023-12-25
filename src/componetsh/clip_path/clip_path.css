@@ -4,28 +4,32 @@
    left: 0px;
    width: 100%;
    height: 100vh;
-   background: #fff;
+   background-color: hsla(0, 30%, 89%, 0.2);
    display: flex;
    justify-content: center;
    align-items: center;
    clip-path: circle(100px at center center);
    z-index: 10;
-  overflow: hidden;
+   overflow: hidden;
  }
 
  .container {
-   width: 900px;
+   width: 100%;
    height: 100vh;
    position: relative;
    margin-top: 330vh;
-   background: white;
    color: #0e112e;
    z-index: 10;
-  left: 100px;
-  overflow-y:visible;
+   overflow-y: visible;
  }
- #skil{
-  right: 50px;
+ .skill_con{
+  width: 30%;
+  padding: 10%;
+  
+ }
+
+ #skil {
+   right: 50px;
  }
 
  .innerText {

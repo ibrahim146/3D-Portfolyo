@@ -3,7 +3,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber';
 
 const Golfscene = (props) => {
-  const { value } = props;
+  const { value, golfsceneright, golfscencar, golfscenwomen } = props;
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/golfscene.glb')
   const { actions, names } = useAnimations(animations, group);
@@ -12,13 +12,13 @@ const Golfscene = (props) => {
   useFrame(() => (actions[names[0]].time = actions[names[0]].getClip().duration * value / 7000))
 
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={group} {...props} dispose={null} >
       <group name="Scene" position={[0.7, -2.9, -5]}>
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
           <group name="root">
             <group name="GLTF_SceneRootNode" rotation={[Math.PI / 2, 0, 0]}>
               <group name="_0" rotation={[-Math.PI / 2, 0, 0]}>
-                <group name="Fabrice_drive-180-01_108" position={[0.504, 0.002, -0.025]} scale={10}>
+                <group name="Fabrice_drive-180-01_108" position={[`${golfsceneright}`, 0.002, -0.025]} scale={10}>
                   <group name="GLTF_created_0">
                     <primitive object={nodes.GLTF_created_0_rootJoint} />
                     <skinnedMesh name="Object_11" geometry={nodes.Object_11.geometry} material={materials.Wolf3D_Avatar} skeleton={nodes.Object_11.skeleton} />
@@ -84,7 +84,7 @@ const Golfscene = (props) => {
                     </group>
                   </group>
                 </group>
-                <group name="GolfBall-V2018_120" position={[-0.732, -0.512, 0.017]} scale={0.1}>
+                <group name="GolfBall-V2018_120" position={[-0.732, -0.700, -0.09]} scale={0.2}>
                   <group name="golf_ball_121" position={[0.151, -0.786, 1.083]} scale={0.025}>
                     <group name="Sketchfab_model_122" position={[0, 0, 39.37]} rotation={[Math.PI / 2, 0, 0]} scale={0.079}>
                       <group name="3DGeom-1_123" position={[0, 0, 144.663]}>
@@ -97,7 +97,7 @@ const Golfscene = (props) => {
                     </group>
                   </group>
                 </group>
-                <group name="Standing_Arguing-Golf-180_115" position={[-2.684, 1.481, 0.001]} rotation={[0, 0, 0.456]} scale={10}>
+                <group name="Standing_Arguing-Golf-180_115" position={[`${golfscenwomen}`, 1.481, 0.001]} rotation={[0, 0, 0.456]} scale={10}>
                   <group name="Assembly-16_116" scale={0.001}>
                     <group name="GLTF_created_1">
                       <primitive object={nodes.GLTF_created_1_rootJoint} />
@@ -105,7 +105,7 @@ const Golfscene = (props) => {
                     </group>
                   </group>
                 </group>
-                <group name="Voiturette-V2018_126" position={[-1.154, 9.396, -0.087]} rotation={[0, 0, 1.693]} scale={2}>
+                <group name="Voiturette-V2018_126" position={[`${golfscencar}`, 9.396, -0.087]} rotation={[0, 0, 1.693]} scale={2}>
                   <group name="Assembly-1_127" position={[-1.717, -0.927, 0]} scale={0.025}>
                     <group name="area_9_golf_cart_132" position={[63.273, 36.505, 0.067]} scale={0.028}>
                       <group name="Sketchfab_model_133">

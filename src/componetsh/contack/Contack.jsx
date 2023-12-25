@@ -18,7 +18,7 @@ function Contack() {
   }
 
   return (
-    <div className='content_container'>
+    <div className='contack_container'>
       <div className='iletişim_text'>
         <div className="carddd" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <span className="titlee" id='contack'>CONTACK</span>

@@ -7,7 +7,7 @@ import Profilİmage from "../image/channels4_profile.jpg";
 
 function Container(props) {
   const [fullprofilimages, setfullprofilimages] = useState("profilimagesclos")
-  const { value } = props;
+  const { value  , displaynone} = props;
 
   return (
     <>
@@ -28,7 +28,7 @@ function Container(props) {
           />
         </div>
 
-        <div className='Html_container'>
+        <div className={`Html_container ${displaynone}`}>
           <motion.img style={{ cursor: "pointer" }} onClick={() => setfullprofilimages("")}
             className='profilimages' src={Profilİmage} alt={Profilİmage}
             initial={{

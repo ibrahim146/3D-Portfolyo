@@ -61,6 +61,7 @@ function Clip_path(props) {
                 <h2 style={{ left: `${100 - nevvalue / 6}%` }} className="innerText">ibrahim akyel</h2>
             </section>
             <div className="container">
+                <div className="skill_con">
                 <motion.div whileInView={"visible"} id="skil" className="skill.skilll">
                     <h2 className="skill_h2">Skills</h2>
                     <div className="skill_item">
@@ -127,7 +128,7 @@ function Clip_path(props) {
                                     >
                                         {lng.title} - {lng.level}%
                                     </motion.h3>
-                                    <div className="skill_lang_h32">
+                                    <div className="skill_lang_h32" style={{width:"16rem"}}>
                                         <motion.div
                                             className="skill_lang_div4"
                                             style={{ width: `${lng.level}%` }}
@@ -151,19 +152,9 @@ function Clip_path(props) {
                         </div>
                     </div>
                 </motion.div>
-                <Canvas id='canvas2' style={{
-                    width: "100%", height: "100vh",
-                    position: "absolute", top: "0px",
-                    left: "200px", display: "inline-block"
-                }}>
-                    <ambientLight />
-                    <Environment preset="sunset" />
-                    <Suspense fallback={null}>
-                        <Tolanding value={value} />
-                    </Suspense>
-                </Canvas>
+                </div>
                 <Projeck />
-            <Contack />
+                <Contack />
             </div>
         </>
     )

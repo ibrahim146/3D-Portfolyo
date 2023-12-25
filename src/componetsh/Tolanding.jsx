@@ -26,11 +26,11 @@ const Tolanding = (props) => {
     <group ref={group} {...props} dispose={null}>
       <group name="Scene" >
         <motion.group name="tolanding" rotation={[Math.PI / 2, 0, 0]} scale={0.01}
-          position={[-1, 3, 0]}
+          position={[1, 3, 1]}
           animate={{
             z: 3,
             y: -1,
-            x: 0,
+            x: 1,
           }}
           transition={{
             duration: 0.8,
