@@ -1,0 +1,232 @@
+.contact_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.contact_area {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+.contact_form {
+    width: 640px;
+    height: 100%;
+}
+
+.contact_3D {
+    width: 640px;
+    height: 100%;
+}
+.area_3D {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.orange {
+    color: #00ffff;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 30px;
+    background-color: #001925;
+    padding: 30px;
+    border-left: 5px solid #00ffff;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.heading {
+    display: block;
+    color: #00ffff;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.form-container .form .input {
+    color: #00ffff;
+    width: 100%;
+    background-color: #002733;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    border-left: 1px solid transparent;
+}
+
+.form-container .form .input:focus {
+    border-left: 5px solid #00ffff;
+}
+
+.form-container .form .textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #013747;
+    color: #00ffff;
+    font-weight: bold;
+    resize: none;
+    max-height: 150px;
+    margin-bottom: 20px;
+    border-left: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .textarea:focus {
+    border-left: 5px solid #00ffff;
+}
+
+.form-container .form .button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+    flex-basis: 70%;
+    background: #00ffff;
+    padding: 10px;
+    color: #001925;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .send-button:hover {
+    background: transparent;
+    border: 1px solid #00ffff;
+    color: #00ffff;
+}
+
+.form-container .form .button-container .reset-button-container {
+    filter: drop-shadow(1px 1px 0px #00ffff);
+    flex-basis: 30%;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    color: #00ffff;
+    font-weight: bold;
+    background: #001925;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+    transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button:hover {
+    background: #00ffff;
+    color: #001925;
+}
+
+
+
+
+
+.obj {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: 0.5s all;
+    transform: rotateX(-25deg) rotateY(20deg);
+}
+
+.objchild {
+    animation: rotate 4s infinite linear;
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.objchild::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(20px);
+    box-shadow: 0 0 200px 15px #00ffff;
+    transform: rotateX(90deg) scale(1.1) translateZ(-120px);
+}
+
+.inn1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    filter: blur(2px);
+    transform: translateZ(-250px);
+    background: linear-gradient(to top, rgb(11, 11, 102), #00ffff)
+}
+
+.inn2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(100px);
+    background: linear-gradient(to top, rgb(11, 11, 102), #00ffff);
+}
+
+.inn3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100px) rotateY(90deg);
+    background: linear-gradient(to top, rgb(11, 11, 102), #00ffff);
+}
+
+.inn4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100px) rotateY(90deg);
+    background: linear-gradient(to top, rgb(10, 10, 78), #00ffff);
+}
+
+.inn5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00ffff;
+    transform: rotateX(90deg) translateZ(-100px);
+}
+
+.inn6 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00ffff;
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
