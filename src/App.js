@@ -26,13 +26,16 @@ function App() {
 
   return (
     <>
-      <div className="container">
-      <Mecontainer />
+      <div className="mecontainer">
+
+
+
+
+        <Mecontainer />
         <Menü />
         <div className="fixed_container img">
           <div className="">
-            
-            <Canvas style={{ width: "100%", height: "100%", position: "fixed" }} >
+            <Canvas style={{ width: "100vw", height: "100vh", position: "fixed" }} >
               <ambientLight />
               <Environment preset="sunset" />
               <Suspense fallback={null}>
@@ -44,9 +47,9 @@ function App() {
         <Clip_path value={value} />
         <div className="down_container">
           <div className="overview_container">
-            <h1 id="overview" style={{ paddingBottom: "1%", fontSize: "50px", color:"#00ffff" }}>overview</h1>
-            <div style={{zIndex:5}} className="text_overview">
-              <p style={{ width: "70%" , zIndex:5 , fontSize: "20px"}}>
+            <h1 id="overview" style={{ paddingBottom: "1%", fontSize: "50px", color: "#00ffff" }}>overview</h1>
+            <div style={{ zIndex: 5 }} className="text_overview">
+              <p style={{ width: "70%", zIndex: 5, fontSize: "20px" }}>
                 <Typewriter
                   options={{
                     deleteSpeed: 999999,
@@ -59,9 +62,11 @@ function App() {
                 />
               </p>
             </div>
+
+
             <div className="style_container">
               <div className="skill_style">
-                <Skill />
+              <Skill />
               </div>
               <div className="languages_style">
                 <Languages />
@@ -73,7 +78,7 @@ function App() {
         <div className="experience_container">
           <Experience />
         </div>
-        
+
         <Projeck />
         <Contact />
       </div>

@@ -1,3 +1,13 @@
+.me_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  color: white;
+}
+
 .fullprofilimagescontainer {
     backdrop-filter: blur(10px);
     position: fixed;
@@ -40,16 +50,7 @@
     transition: all ease-in-out 1s;
   }
   
-  .me_container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    flex-direction: column;
-    color: white;
-  }
-  
+
   .Html_container {
     position: fixed;
     top: 0;

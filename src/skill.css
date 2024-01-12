@@ -1,45 +1,52 @@
-.skill.skilll{
-    background-color: black;
-    
-  }
-  .skill_h2{
-      font-size: 1.75rem; /* veya 60px; */
-      font-weight: 700;
-      width: 100%;
-    }
-    .skill_item{
-        margin-top: 1rem; 
-        margin-bottom: 1rem;
-    }
-    .skill_h3{
-      font-size: 1.40rem; /* veya 20px; */
-      font-weight: 700; 
-      color: #edf2f7; 
-    }
-    
-    .skill_div2{
-      height: 1rem; /* veya 8px; */
-      width: 90%; 
-      background-color: #edf2f7; 
-      border-radius: 9999px; /* Büyük bir değer kullanarak tamamen yuvarlak yapar */
-      margin-top: 0.5rem;
-    }
-    
-    .skill_skill{
-      height: 100%; 
-      background-color: #00ffff; 
-      border-radius: 9999px; 
-    }
-    .skill_lang{
-    
-      font-size: 1.75rem; /* veya 60px; */
-      font-weight: 700; 
-      margin-top: 1.5rem;
-    }
-    .skill_div4{
-      margin-top: 1rem; 
-      margin-bottom: 1rem;
-    }
-  
-    
-  
+.skill.skilll {
+  background-color: black;
+
+}
+
+.skill_h2 {
+  font-size: 1.75rem;
+  /* veya 60px; */
+  font-weight: 700;
+  width: 100%;
+}
+
+.skill_item {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skill_h3 {
+  font-size: 1.40rem;
+  /* veya 20px; */
+  font-weight: 700;
+  color: #edf2f7;
+}
+
+.skill_div2 {
+  height: 1rem;
+  /* veya 8px; */
+  width: 90%;
+  background-color: #edf2f7;
+  border-radius: 9999px;
+  /* Büyük bir değer kullanarak tamamen yuvarlak yapar */
+  margin-top: 0.5rem;
+}
+
+.skill_skill {
+  height: 100%;
+  background-color: #00ffff;
+  border-radius: 9999px;
+}
+
+.skill_lang {
+
+  font-size: 1.75rem;
+  /* veya 60px; */
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.skill_div4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
