@@ -3,6 +3,7 @@
     flex-direction: column;
     margin-top: 100px;
 }
+
 .experience_icon {
     display: flex;
     justify-content: center;
@@ -42,18 +43,20 @@
     letter-spacing: 0.05em;
 }
 
-@media (max-width:1024px){
-    .vertical{
+@media (max-width:1024px) {
+    .vertical {
         margin-top: -400px;
     }
 }
-@media (max-width:820px){
-    .vertical{
+
+@media (max-width:820px) {
+    .vertical {
         margin-top: -200px;
     }
 }
-@media (max-width:431px){
-    .vertical{
+
+@media (max-width:431px) {
+    .vertical {
         margin-top: 400px;
     }
 }

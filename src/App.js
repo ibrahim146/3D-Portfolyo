@@ -23,14 +23,9 @@ function App() {
     console.log(value);
   }, [value]);
 
-
   return (
     <>
       <div className="mecontainer">
-
-
-
-
         <Mecontainer />
         <Menü />
         <div className="fixed_container img">
@@ -62,11 +57,9 @@ function App() {
                 />
               </p>
             </div>
-
-
             <div className="style_container">
               <div className="skill_style">
-              <Skill />
+                <Skill />
               </div>
               <div className="languages_style">
                 <Languages />
@@ -74,11 +67,9 @@ function App() {
             </div>
           </div>
         </div>
-
         <div className="experience_container">
           <Experience />
         </div>
-
         <Projeck />
         <Contact />
       </div>

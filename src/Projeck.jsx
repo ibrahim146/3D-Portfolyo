@@ -5,12 +5,21 @@ import movie from "./images/movie.png";
 import steel_case from "./images/steel_case.png";
 import steel from "./images/yetiş_metal.png";
 import vitrin from "./images/vitrin.png";
+import golf_3D_Portfolio from "./images/Golf_3D_portfoly.png"
 const Projeck = () => {
   const projects = [
     {
+      name: "Golf 3D Portfolio",
+      image: golf_3D_Portfolio,
+      description: "Personal website I designed with react three fiber"
+      ,
+      source_code_link: "https://github.com/ibrahim146/3D-Portfolyo",
+      live: "/"
+    },
+    {
       name: "3D Portfolio",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Personal website I designed with react three fiber",
 
       image: portfolio,
       source_code_link: "https://github.com/ibrahim146/mozaikmanken.com",
