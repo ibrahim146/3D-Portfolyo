@@ -221,6 +221,9 @@
     background: #00ffff;
     transform: rotateX(90deg) translateZ(100px);
 }
+.vertical-timeline-element-date{
+color: white;
+}
 
 @keyframes rotate {
     0% {
@@ -271,5 +274,10 @@
     .area_3D {
         height: 70%;
         padding-left: 100px;
+    }
+}
+@media (max-width:431px) {
+    .contact_container {
+        margin-top: 1100px;
     }
 }

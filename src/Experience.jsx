@@ -67,13 +67,13 @@ const Experience = () => {
             <div className="vertical">
                 <VerticalTimeline >
                     {experiences.map((experience) => (
-                        <VerticalTimelineElement
+                        <VerticalTimelineElement className="whitee"
 
                             contentStyle={{
                                 background: "#00ffff",
                                 color: "black",
                             }}
-                            contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+                            contentArrowStyle={{ borderRight: "7px solid  #00ffff" }}
                             date={experience.date}
                             iconStyle={{ background: experience.iconBg }}
                             icon={<div className="experience_icon">

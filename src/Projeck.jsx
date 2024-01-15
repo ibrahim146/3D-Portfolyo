@@ -7,6 +7,7 @@ import steel from "./images/yetiş_metal.png";
 import vitrin from "./images/vitrin.png";
 import golf_3D_Portfolio from "./images/Golf_3D_portfoly.png"
 const Projeck = () => {
+
   const projects = [
     {
       name: "Golf 3D Portfolio",
