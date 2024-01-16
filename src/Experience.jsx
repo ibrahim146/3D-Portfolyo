@@ -66,8 +66,8 @@ const Experience = () => {
         <>
             <div className="vertical">
                 <VerticalTimeline >
-                    {experiences.map((experience) => (
-                        <VerticalTimelineElement className="whitee"
+                    {experiences.map((experience , index) => (
+                        <VerticalTimelineElement key={index} className="whitee"
 
                             contentStyle={{
                                 background: "#00ffff",

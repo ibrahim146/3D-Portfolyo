@@ -18,6 +18,13 @@
   flex-wrap: wrap;
 }
 
+.project_p {
+  color: white;
+  width: 60%;
+  margin-bottom: 3%;
+  font-size: 20px;
+}
+
 .card {
 
   width: 350px;
@@ -114,10 +121,15 @@
   .projects_container {
     margin-top: 1000px;
   }
+
+  .project_p {
+    width: 90%;
+  }
 }
 
 @media (max-width:361px) {
   .projects_container {
     margin-top: 1000px;
   }
+
 }

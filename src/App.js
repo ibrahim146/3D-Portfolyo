@@ -1,4 +1,5 @@
-import { Environment } from "@react-three/drei";
+import { Environment} from "@react-three/drei";
+import Loader from "./Loader";
 import './App.css';
 import { Suspense, useEffect, useState } from 'react';
 import { Canvas } from "@react-three/fiber";
@@ -33,7 +34,7 @@ function App() {
             <Canvas style={{ width: "100vw", height: "100vh", position: "fixed" }} >
               <ambientLight />
               <Environment preset="sunset" />
-              <Suspense fallback={null}>
+              <Suspense fallback={<Loader />}>
                 <Golf value={value} />
               </Suspense>
             </Canvas>
